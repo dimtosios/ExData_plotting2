@@ -8,7 +8,8 @@ aggdata <- aggregate(Emissions ~ year + fips, subsetNEI, sum)
 aggdata$fips[aggdata$fips=="24510"] <- "Baltimore"
 aggdata$fips[aggdata$fips=="06037"] <- "Los Angeles"
 
-png("plot6.png")
+png("plot6.png", width=1040, height=480)
+
 g <- ggplot(aggdata, aes(factor(year), Emissions))
 g <- g + facet_grid(. ~ fips)
 
