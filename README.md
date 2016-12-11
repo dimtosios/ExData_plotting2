@@ -1,1 +1,1 @@
-# ExData_plotting2
+# Exploratory Data project 2
